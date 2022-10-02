@@ -400,30 +400,34 @@
             </li>
           </ul>
         </div>
-        <div class="footer-email"></div>
-        <form class="footer-form">
-          <ul class="footer-signup">
-            <li><label for="email" class="footer-email-label">Підпишіться на розсилку</label></li>
-            <li>
-              <ul class="input-email">
-                <li>
-                  <input
-                    class="footer-email-input"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="E-mail"
-                  />
-                </li>
-                <li>
-                  <button type="submit" class="footer-email-btn">Підписатись <svg viewBox width="24" height="24" class="icon-send">
-                    <use href="./images/icons.svg.svg#icon-icon-send"></use>
-                  </svg>
-                </li></button>
-              </ul>
-            </li>
-          </ul>
-        </form>
+        <div class="footer-email">
+          <form class="footer-form">
+            <ul class="footer-signup">
+              <li><label for="email" class="footer-email-label">Підпишіться на розсилку</label></li>
+              <li>
+                <ul class="input-email">
+                  <li>
+                    <input
+                      class="footer-email-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="E-mail"
+                    />
+                  </li>
+                  <li>
+                    <button type="submit" class="footer-email-btn">
+                      Підписатись
+                      <svg viewBox width="24" height="24" class="icon-send">
+                        <use href="./images/icons.svg.svg#icon-icon-send"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Модальное окно-->
@@ -435,7 +439,7 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <div class="form-element">
             <label for="name" class="form-label">Ім'я</label>
             <input type="text" class="form-input" name="name" id="name" />
@@ -445,8 +449,8 @@
             <input type="tel" class="form-input" id="tel" />
           </div>
           <div class="form-element">
-            <label for="email" class="form-label">Пошта</label>
-            <input type="email" class="form-input" id="email" />
+            <label for="mail" class="form-label">Пошта</label>
+            <input type="email" class="form-input" id="mail" />
           </div>
           <div class="form-element">
             <label for="comment" class="form-label">Коментар</label>
