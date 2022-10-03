@@ -442,15 +442,30 @@
         <form class="modal-form">
           <div class="form-element">
             <label for="name" class="form-label">Ім'я</label>
-            <input type="text" class="form-input" name="name" id="name" />
+            <div class="input-wrap">
+              <input type="text" class="form-input" name="name" id="name" />
+              <svg viewBox="0 0 32 32" width="20" class="icon-modal">
+                <use href="./images/icons.svg.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-element">
             <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" class="form-input" id="tel" />
+            <div class="input-wrap">
+              <input type="tel" class="form-input" name="tel" id="tel" />
+              <svg viewBox="0 0 32 32" width="20" class="icon-modal">
+                <use href="./images/icons.svg.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-element">
             <label for="mail" class="form-label">Пошта</label>
-            <input type="email" class="form-input" id="mail" />
+            <div class="input-wrap">
+              <input type="email" class="form-input" name="mail" id="mail" />
+              <svg viewBox="0 0 32 32" width="20" class="icon-modal">
+                <use href="./images/icons.svg.svg#icon-email-black"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-element">
             <label for="comment" class="form-label">Коментар</label>
@@ -463,10 +478,16 @@
             ></textarea>
           </div>
           <div class="accept">
-            <input type="checkbox" id="accept" name="accept" required />
-            <label for="accept" class="accept-label"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            <input type="checkbox" id="accept" name="accept" class="visually-hidden" required />
+            <label for="accept" class="accept-label">
+              <span class="checkbox">
+                <svg viewBox="0 0 42 32" width="12">
+                  <use href="./images/icons.svg.svg#icon-Vector-1"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю</label
             >
+            <a href="/" class="checkbox-link">Умови договору</a>
           </div>
           <button type="submit" class="btn-modal">Відправити</button>
         </form>
