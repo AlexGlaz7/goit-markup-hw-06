@@ -571,6 +571,7 @@ body {
 .modal {
   width: 528px;
   height: 581px;
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -587,6 +588,11 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover,
+.close-button:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -599,21 +605,13 @@ body {
 }
 .modal-title {
   display: inline-block;
-  margin-top: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
+  text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-}
-.modal-form {
-  width: 450px;
-  height: 345px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .form-element {
   display: flex;
@@ -635,6 +633,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--secondary-color);
+  margin-bottom: 4px;
 }
 .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -656,6 +655,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
+  font-size: 12px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
@@ -669,6 +669,7 @@ body {
 .accept {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .accept-label {
   font-size: 14px;
@@ -685,8 +686,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 7px;
   margin-top: 4px;
+  margin-right: 7px;
+  margin-left: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
